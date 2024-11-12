@@ -25,16 +25,16 @@
     <img src="image.png">
 </body>
 <script>
+    document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+        alert("Klik kanan telah dinonaktifkan di halaman ini.");
+    });
+    
     var typed = new Typed('dynamic-text', {
   strings: ["Sup? My Name Is Gilang and I live in Salatiga.", "One day, I will be a Professional Front End Developer."],
   typeSpeed: 50,
   backSpeed: 25,
   loop: true
-});
-
-document.addEventListener("contextmenu", function (event){
-    event.preventDefault();
-    alert("Klik kanan telah dinonaktifkan di situs ini");
 });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
