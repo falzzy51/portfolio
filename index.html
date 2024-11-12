@@ -31,6 +31,11 @@
   backSpeed: 25,
   loop: true
 });
+
+document.addEventListener("contextmenu", function (event){
+    event.preventDefault();
+    alert("Klik kanan telah dinonaktifkan di situs ini");
+});
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
