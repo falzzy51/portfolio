@@ -7,6 +7,11 @@
 body {
     height: 100vh; /* Full height of the viewport */
     margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
     background: linear-gradient(270deg, #645e9d, #6c969d, #99d5c9);
     background-size: 400% 400%; /* Make the gradient larger for smooth animation */
     animation: gradient 15s ease infinite; /* Animation for the gradient */
