@@ -7,7 +7,6 @@
 body {
     height: 100vh; /* Full height of the viewport */
     margin: 0;
-    display: flex;
     text-align: center;
     align-items: center;
     background: linear-gradient(270deg, #645e9d, #6c969d, #99d5c9);
