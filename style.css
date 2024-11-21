@@ -73,6 +73,8 @@ p {
     font-size: larger;
     margin: 0 auto;
     max-width: 600px;
+    line-height: 23px;
+    word-spacing: 0.1rem;
 }
 
 img {
