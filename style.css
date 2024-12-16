@@ -7,7 +7,6 @@
 body {
     height: 100vh; /* Full height of the viewport */
     margin: 0;
-    padding: 0;
     text-align: center;
     align-items: center;
     background: linear-gradient(270deg, #645e9d, #6c969d, #99d5c9);
@@ -67,7 +66,7 @@ body {
     font-size: x-large;
 }
 
-p {
+paragraf {
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     color: white;
