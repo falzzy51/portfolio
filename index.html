@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body>
+<body oncontextmenu="return false;">
     <h2 class="title">My Portfolio</h3>
         <h3 class="name">Sup? My Name Is Naufal and I live in Salatiga.</h3>
             <!-- Social Links -->
@@ -47,10 +47,6 @@
     </section>
 </body>
 <script>
-    document.addEventListener("contextmenu", function(event) {
-        event.preventDefault();
-        alert("Klik kanan telah dinonaktifkan di halaman ini.");
-    });
     
     var typed = new Typed('name', {
   strings: ["Sup? My Name Is Gilang and I live in Salatiga.", "One day, I will be a Professional Front End Developer."],
