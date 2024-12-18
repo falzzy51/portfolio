@@ -25,6 +25,26 @@
     <p class="paragraf">Welcome to my web developer portfolio! a beginner and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. </p>
     </div>
     <img src="image.png">
+
+    <header>
+        <div class="container">
+            <p>Berikut adalah beberapa karya yang telah saya buat</p>
+        </div>
+    </header>
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="img/karya1.png" alt="Karya 1">
+            <div class="overlay">
+                <a href="https://cekcuaca-nu.vercel.app/" target="_blank"><p>Cek Cuaca</p></a>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/karya2.jpg" alt="Karya 2">
+            <div class="overlay">
+                <p>Karya 2</p>
+            </div>
+        </div>
+    </section>
 </body>
 <script>
     document.addEventListener("contextmenu", function(event) {
@@ -37,6 +57,29 @@
   typeSpeed: 50,
   backSpeed: 25,
   loop: false
+});
+
+const galleryItems = document.querySelectorAll('.gallery-item img');
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const src = item.src;
+        const lightbox = document.createElement('div');
+        lightbox.classList.add('lightbox');
+        lightbox.innerHTML = `<img src="${src}" alt="Karya" /><span class="close">&times;</span>`;
+        document.body.appendChild(lightbox);
+
+        // Menutup lightbox saat klik pada tombol close
+        lightbox.querySelector('.close').addEventListener('click', () => {
+            document.body.removeChild(lightbox);
+        });
+
+        // Menutup lightbox saat klik di luar gambar
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                document.body.removeChild(lightbox);
+            }
+        });
+    });
 });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
